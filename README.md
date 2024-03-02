@@ -88,17 +88,57 @@ We also have to create a **queue**
  
 ## 2. Create a .NET8 WebAPI with VSCode
 
+Creating a .NET 8 Web API using Visual Studio Code (VSCode) and the .NET CLI is a straightforward process
 
+This guide assumes you have .NET 8 SDK, VSCode, and the C# extension for VSCode installed. If not, you'll need to install these first
+
+**Step 1: Install .NET 8 SDK**
+
+Ensure you have the .NET 8 SDK installed on your machine: https://dotnet.microsoft.com/es-es/download/dotnet/8.0
+
+You can check your installed .NET versions by opening a terminal and running:
+
+```
+dotnet --list-sdks
+```
+
+If you don't have .NET 8 SDK installed, download and install it from the official .NET download page
+
+**Step 2: Create a New Web API Project**
+
+Open a terminal or command prompt
+
+Navigate to the directory where you want to create your new project
+
+Run the following command to create a new Web API project:
+
+```
+dotnet new webapi -n ServiceBusReceiverApi
+```
+
+This command creates a new directory with the project name, sets up a basic Web API project structure, and restores any necessary packages
+
+**Step 3: Open the Project in VSCode**
+
+Once the project is created, you can open it in VSCode by navigating into the project directory and running:
+
+```
+code .
+```
+
+This command opens VSCode in the current directory, where . represents the current directory
 
 ## 3. Load project dependencies
+
+We execute this command to add the Azure Service Bus library
 
 ```
 dotnet add package Azure.Messaging.ServiceBus
 ```
 
+We also have to load the Swagger and OpenAPI docs libraries, see the csproj file
 
 ![image](https://github.com/luiscoco/Azure_ServiceBus_with_dotNET8_WebAPI_consumer_advance_sample/assets/32194879/ae6a45e0-42d4-4007-ae38-09eba05afc2e)
-
 
 ## 4. Create the project structure
 
@@ -238,5 +278,10 @@ app.Run();
 
 ## 7. Run and Test the application
 
+We execute this command to run the application
+
+```
+dotnet run
+```
 
 
