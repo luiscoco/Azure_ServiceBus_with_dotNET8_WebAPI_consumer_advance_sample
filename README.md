@@ -286,4 +286,12 @@ We execute this command to run the application
 dotnet run
 ```
 
+![image](https://github.com/luiscoco/Azure_ServiceBus_with_dotNET8_WebAPI_consumer_advance_sample/assets/32194879/aa4abb22-4343-464e-8e64-12bba8bb5c98)
+
+We can navigate to the application Swagger endpoint: http://localhost:5041/swagger/index.html
+
+![image](https://github.com/luiscoco/Azure_ServiceBus_with_dotNET8_WebAPI_consumer_advance_sample/assets/32194879/06ed3dd1-f682-440f-822d-39bfc6c3c6a6)
+
+
+
 
